@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forager"
+version = "0.1.0"
+description = "Spatio-Temporal On-Demand Foraging Agent for Streaming Video Understanding"
+readme = "PROPOSAL_OPTION_A.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.1.0",
+    "torchvision>=0.16.0",
+    "transformers>=4.45.0",
+    "numpy>=1.24.0",
+    "Pillow>=10.0.0",
+    "decord>=0.6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["forager*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

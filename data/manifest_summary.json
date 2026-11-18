@@ -1,0 +1,44 @@
+{
+  "seed": 20261106,
+  "raw_pool_total": 40325,
+  "sft_count": 6000,
+  "sft_unique_videos": 812,
+  "sft_by_trajectory_type": {
+    "direct_answer": 2000,
+    "zoom_in": 1800,
+    "recall_found": 1200,
+    "wait": 600,
+    "recall_none_hld": 400
+  },
+  "sft_by_action_type": {
+    "Answer": 2000,
+    "ZoomIn": 1800,
+    "Recall": 1600,
+    "Wait": 600
+  },
+  "sft_tool_bearing_ratio": 0.6667,
+  "rl_count": 8000,
+  "rl_unique_videos": 1331,
+  "rl_by_bucket": {
+    "hallucination_hld": 1500,
+    "historical_recall": 3000,
+    "realtime_perception": 2500,
+    "forward_active_wait": 1000
+  },
+  "rl_by_task_type": {
+    "mcq": 5750,
+    "open": 1250,
+    "proactive": 1000
+  },
+  "video_overlap_count": 0,
+  "files": {
+    "sft_coldstart_6k.jsonl": {
+      "path": "/mlx/users/lipengyu.seed/playground/agentic_video_understanding/data/sft_coldstart_6k.jsonl",
+      "sha256": "356890feb049ca2093300fee527ce22019af9096b00984a039d14cf0bc3d2ca2"
+    },
+    "rl_ig_grpo_8k.jsonl": {
+      "path": "/mlx/users/lipengyu.seed/playground/agentic_video_understanding/data/rl_ig_grpo_8k.jsonl",
+      "sha256": "99b058f3bc9d7342267d774515f7c46b02844172426d8b9e9ef09c238255492a"
+    }
+  }
+}
